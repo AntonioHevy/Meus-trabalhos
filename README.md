@@ -1,2 +1,2 @@
-# teste
-meu trabalhos
+# Meus trabalhos da faculdade.
+Atividades do meu ano curricular
