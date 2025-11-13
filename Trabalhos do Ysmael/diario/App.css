@@ -1,0 +1,76 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ---------- Temas ---------- */
+body[data-theme="dark"] {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+body[data-theme="light"] {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+/* ---------- Container principal ---------- */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ---------- Relógio ---------- */
+.main-clock h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.clock-card {
+  background: transparent;
+  box-shadow: none;
+}
+
+.clock-card h2 {
+  display: none;
+}
+
+.clock-card p {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+/* ---------- Botão do tema ---------- */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: 2px solid currentColor;
+  color: inherit;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
